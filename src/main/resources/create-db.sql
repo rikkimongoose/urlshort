@@ -1,0 +1,10 @@
+CREATE DATABASE shorturl;
+
+USE shorturl;
+
+CREATE TABLE IF NOT EXISTS url (
+  id VARCHAR(50) NOT NULL,
+  fullUrl VARCHAR(256) NOT NULL DEFAULT '',
+  created DATETIME NOT NULL,
+  PRIMARY KEY(`id`(4))
+);
